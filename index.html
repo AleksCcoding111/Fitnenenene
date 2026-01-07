@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- =========================
+       CONFIG RAPIDA TEMPLATE
+  ========================= -->
+  <!-- COLORE PRINCIPALE -->
+  <style>
+    :root {
+      --primary: #1e8e6e;
+      --light-bg: #f4f8f7;
+      --text: #222;
+    }
+  </style>
+
+  <title>Studio di Fisioterapia – Dott. Rossi</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+    .hero {
+      background: linear-gradient(120deg, var(--light-bg), #ffffff);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .btn {
+      background: var(--primary);
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 18px;
+      display: inline-block;
+    }
+
+    /* =========================
+       SEZIONI GENERALI
+    ========================= */
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    /* =========================
+       SERVIZI
+    ========================= */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    /* =========================
+       SEZIONE IMMAGINE + TESTO
+    ========================= */
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 14px;
+    }
+
+    /* =========================
+       CTA FINALE
+    ========================= */
+    .final-cta {
+      background: var(--light-bg);
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    /* =========================
+       CTA STICKY MOBILE
+    ========================= */
+    .cta-sticky {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: var(--primary);
+      padding: 14px;
+      display: none;
+      z-index: 999;
+    }
+
+    .cta-sticky a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .cta-sticky {
+        display: block;
+      }
+
+      body {
+        padding-bottom: 80px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       HERO
+  ========================= -->
+  <div class="hero">
+    <h1>Fisioterapia e Riabilitazione</h1>
+    <p>Trattamenti personalizzati per eliminare il dolore e migliorare la tua qualità di vita.</p>
+    <a href="https://wa.me/393331234567" class="btn">Prenota ora su WhatsApp</a>
+  </div>
+
+  <!-- =========================
+       SERVIZI
+  ========================= -->
+  <section>
+    <h2>Trattamenti principali</h2>
+
+    <div class="services">
+      <div class="card">
+        <h3>Dolori cervicali e lombari</h3>
+        <p>Riduzione del dolore e recupero della mobilità articolare.</p>
+      </div>
+
+      <div class="card">
+        <h3>Riabilitazione post-infortunio</h3>
+        <p>Percorsi personalizzati per tornare in forma in sicurezza.</p>
+      </div>
+
+      <div class="card">
+        <h3>Postura e prevenzione</h3>
+        <p>Correzione posturale per evitare ricadute future.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       CHI SONO
+  ========================= -->
+  <section>
+    <div class="about">
+      <img src="https://images.unsplash.com/photo-1580281657521-8c7f9b4c0f3a" alt="Studio di fisioterapia">
+
+      <div>
+        <h2>Un approccio umano e professionale</h2>
+        <p>
+          Sono un fisioterapista con oltre 10 anni di esperienza.
+          Ogni trattamento è basato su evidenze scientifiche
+          e studiato sulle esigenze del singolo paziente.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       CTA FINALE
+  ========================= -->
+  <div class="final-cta">
+    <h2>Inizia il tuo percorso di recupero</h2>
+    <p>Prenota ora una valutazione personalizzata.</p>
+    <a href="https://wa.me/393331234567" class="btn">Contattami su WhatsApp</a>
+  </div>
+
+  <!-- =========================
+       CTA STICKY MOBILE
+  ========================= -->
+  <div class="cta-sticky">
+    <a href="https://wa.me/393331234567">Prenota ora su WhatsApp</a>
+  </div>
+
+</body>
+</html>
